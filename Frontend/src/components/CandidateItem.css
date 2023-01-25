@@ -1,0 +1,133 @@
+.candidate-card__jobtitle {
+  font-family: "Roihu", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 550;
+  color: #E71234;
+  margin: 0.5rem 0;
+}
+
+.candidate-card__labels {
+  margin-bottom: 1rem;
+}
+
+ul.candidate-labels {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.candidate-card__labels ul {
+  max-width: 100%;
+}
+
+.candidate-card__labels ul.candidate-labels li {
+  color: #1D1D1D;
+}
+
+ul.candidate-labels li {
+  font-family: "Ratio", sans-serif;
+  font-weight: 300;
+  font-size: 1.18750rem;
+  margin-right: 1rem;
+  color: #FFF;
+}
+
+.candidate-card__labels ul.candidate-labels li {
+  color: #1D1D1D;
+}
+
+ul.candidate-labels li {
+  font-family: "Ratio", sans-serif;
+  font-weight: 300;
+  font-size: 1.18750rem;
+  margin-right: 1rem;
+  color: #FFF;
+}
+
+.candidate-card__labels ul.candidate-labels li {
+  color: #1D1D1D;
+}
+
+ul.candidate-labels li:before {
+  display: inline-block;
+  color: #FF8A81;
+  font-size: 1.12500rem;
+  font-family: "driessen" !important;
+  position: relative;
+  top: 0.1875rem;
+  margin-right: 0.5rem;
+}
+
+.candidate-card__labels ul.candidate-labels li:before {
+  color: #DEDEDE;
+}
+
+.candidate__label--length:before {
+  content: 'l' !important;
+}
+
+.candidate-card .btn,
+.candidate-card .select-blue,
+.candidate-card .selected-filters li,
+.selected-filters .candidate-card li {
+  background-color: #75B4BC;
+}
+
+.candidate-card {
+  box-shadow: unset;
+  border-radius: unset;
+  padding: 0;
+  overflow: unset;
+  position: relative;
+}
+
+.candidate-card {
+  overflow: hidden;
+  padding: 30px;
+  border-radius: 0 2rem 2rem 2rem;
+  box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%);
+  background-color: white;
+  margin: 60px;
+  margin-top: 0;
+  margin-bottom: 30px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: justify;
+}
+
+.candidate-card:before {
+  width: 100vw;
+  height: 0.0625rem;
+  max-height: 0.0625rem;
+  overflow: hidden;
+  position: relative;
+  left: -0.9375rem;
+  background-color: #E2E2E2;
+}
+
+a {
+  text-underline-offset: 0.1875rem;
+}
+
+a {
+  color: #32113F;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+a:hover{
+  text-decoration: none;
+}
+
+a:hover .btn{
+  color: white;
+  background-color: #6f9da3;
+}

@@ -1,0 +1,203 @@
+/*@media (min-width: 80rem) {*/
+    .main-navigation__wrapper {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        height: 7rem;
+        transition: all 250ms ease-in-out;
+    }
+/*}*/
+
+/*@media (min-width: 80rem) {*/
+    .main-navigation__items {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        -ms-flex-align: center;
+        align-items: center;
+        z-index: 9999;
+    }
+/*}*/
+
+/*@media (min-width: 80rem) {*/
+    .main-navigation__items>.main-navigation__item {
+        position: relative;
+    }
+/*}*/
+
+/*@media (min-width: 80rem) {*/
+    .main-navigation__item {
+        z-index: 1;
+    }
+/*}*/
+
+/*@media (min-width: 80rem) {*/
+
+    .main-navigation__items>.main-navigation__item>a.main-navigation__link.is-active,
+    .main-navigation__items>.main-navigation__item .dropdown-title .main-navigation__link.is-active {
+        color: #B71234;
+    }
+/*}*/
+
+/*@media (min-width: 80rem) {*/
+
+    .main-navigation__items>.main-navigation__item>a.main-navigation__link,
+    .main-navigation__items>.main-navigation__item .dropdown-title .main-navigation__link {
+        white-space: nowrap;
+        font-family: "Roihu", sans-serif;
+        font-weight: 600;
+        color: #E71234;
+        text-decoration: none;
+        position: relative;
+        z-index: 10;
+        transition: none;
+        font-size: 1.06250rem;
+        padding: 2.375rem 0.875rem;
+    }
+/*}*/
+
+.main-navigation__header .company-logo {
+    z-index: 9999;
+}
+
+.company-logo {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.company-logo a {
+    background-repeat: no-repeat;
+    text-decoration: none;
+    display: block;
+}
+
+/*@media (min-width: 80rem) {*/
+    .d-xl-block {
+        display: block !important;
+    }
+/*}*/
+
+svg {
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+
+button:not(:disabled),
+[type="button"]:not(:disabled),
+[type="reset"]:not(:disabled),
+[type="submit"]:not(:disabled) {
+    cursor: pointer;
+}
+
+.hamburger {
+    padding: 0 0;
+    display: inline-block;
+    cursor: pointer;
+    transition-property: opacity, filter;
+    transition-duration: 0.15s;
+    transition-timing-function: linear;
+    font: inherit;
+    color: inherit;
+    text-transform: none;
+    background-color: transparent;
+    border: 0;
+    margin: 0;
+    overflow: visible;
+}
+
+.hamburger .hamburger-box {
+    top: 0.1875rem;
+}
+
+.hamburger-box {
+    width: 1.25rem;
+    height: 0.875rem;
+    display: inline-block;
+    position: relative;
+}
+
+.hamburger--squeeze .hamburger-inner {
+    transition-duration: 0.075s;
+    transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after {
+    width: 1.25rem;
+    height: 0.125rem;
+    background-color: #E71234;
+    border-radius: 0;
+    position: absolute;
+    transition-property: transform;
+    transition-duration: 0.15s;
+    transition-timing-function: ease;
+}
+
+.hamburger-inner {
+    display: block;
+    top: 50%;
+    margin-top: -0.0625rem;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+    -webkit-appearance: button;
+}
+
+button,
+select {
+    text-transform: none;
+}
+
+button,
+input {
+    overflow: visible;
+}
+
+input,
+button,
+select,
+optgroup,
+textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+button {
+    border-radius: 0;
+}
+
+.container, .container-fluid, .container-sm, .container-md, .container-lg, .container-xl {
+    width: 100%;
+    padding-right: 0.9375rem;
+    padding-left: 0.9375rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+.main-navigation{
+    box-shadow: 0 0.1rem 1rem rgb(0 0 0 / 5%);
+    background-color: white;
+}

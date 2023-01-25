@@ -1,0 +1,126 @@
+
+.loginPage{
+    background-image: url("../fonts/login.jpg");
+    margin: 5% 5%;
+    padding: 5% 5%;
+    place-items: center;
+}
+
+.login-container {
+    display: grid;
+    place-items: left;
+}
+
+.cover {
+    top: 5em;
+    background-color: white;
+    width: 30em;
+    height: 30em;
+    position: relative;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-evenly;
+    border: 0.2rem solid;
+}
+
+.cover h1{
+    background-color: white;
+}
+
+.cover h3{
+    background-color: white;
+}
+
+
+input{
+    background-color: white;
+    height: 4em;
+    width: 80%;
+    border-radius: 0.25em;
+    padding: 2em;
+    font-size: 1.75vh;
+}
+
+input:focus{
+    outline-color: rgb(255, 80, 80);
+}
+
+.login-btn
+{
+    color: white;
+    width: 40%;
+    height: 3em;
+    background-color: rgb(255, 80, 80);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    border-radius: 1em;
+    cursor: pointer;
+    border-color: black;
+    font-weight: bold;
+}
+
+.login-btn:hover 
+{
+    background-color: rgb(255, 80, 80);
+    
+}
+
+
+.hide {display: none;}
+
+.error-popup{
+    background-color: rgb(255, 80, 80);
+    width: 25em;
+    height: 3em;
+    position: relative;
+    border-radius: 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-evenly;
+    color: white;
+}
+
+.error-popup h3 {
+    background-color:rgb(255, 80, 80) ;
+    color:white;
+}
+
+
+@media (min-width: 200px) and (max-width:768px)
+{
+    .layout {
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        grid-template-areas: 
+        'clayout__navigation d-print-none'
+        'login';
+    }
+
+    .loginPage{
+        background-image: none;   
+    }
+
+    .cover {
+        top: 5em;
+        background-color: white;
+        width: 100%;
+        height: 30em;
+        position: relative;
+        border-radius: 1em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content:space-evenly;
+        border: 0.2rem solid;
+    }
+
+    .input::placeholder{
+        font-size: 0.65vh;
+    }
+}

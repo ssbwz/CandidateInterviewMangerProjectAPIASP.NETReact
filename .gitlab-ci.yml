@@ -1,0 +1,35 @@
+image: mcr.microsoft.com/dotnet/sdk:latest
+
+stages:
+  - build
+  - test
+  - sonarqube
+
+build:
+  stage: build
+  script:
+    - cd Backend
+    - dotnet build
+
+test:
+  stage: test
+  script:
+    - cd Backend
+    - dotnet test
+
+sonarqube:
+  stage: sonarqube
+
+  script:
+    - cd Backend
+    - dotnet tool list -g
+    - dotnet sonarscanner begin /k:"RotterdamProject3" /d:sonar.host.url="http://localhost:9000"  /d:sonar.login="sqp_22835b75f7e050094b8ac9d6bead0017b1295283" /d:sonar.cs.vscoveragexml.reportsPaths=coverage.xml
+    - dotnet build
+    - dotnet-coverage collect 'dotnet test' -f xml  -o 'coverage.xml'
+    - dotnet sonarscanner end /d:sonar.login="sqp_22835b75f7e050094b8ac9d6bead0017b1295283"
+    - dotnet build-server shutdown
+
+
+
+
+  

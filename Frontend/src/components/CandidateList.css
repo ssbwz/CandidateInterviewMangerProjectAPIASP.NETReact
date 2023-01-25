@@ -1,0 +1,43 @@
+.candidates_list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.candidate_card {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+  width: 100%;
+}
+
+h1 {
+  margin: 20px;
+  margin-left: 15%;
+  margin-bottom: 25px;
+}
+
+.candidates_list ul {
+  width: 80%;
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+  margin: 0px;
+}
+
+ .backbtn{
+  font-weight: 600;
+  font-size: 1.06250rem;
+  color: #E71234;
+  text-decoration: underline;
+  margin-left: 5%;
+}
+
+.backbtn:hover{
+  color: #E71234;
+  text-decoration: underline;
+}
